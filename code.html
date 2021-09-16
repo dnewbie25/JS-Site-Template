@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/main-site.css">
+    <link rel="icon" href="img/favicon-32x32.png" type="image/png">
+    <link rel="stylesheet" href="css/prism.css">
+    <link rel="stylesheet" href="css/code-site.css">
+    <script src="https://kit.fontawesome.com/06f8650693.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppName: A Coding Project by Daniel Montoya
+    </title>
+</head>
+
+<body>
+    <!-- Main site header -->
+    <header id="main-header">
+        <nav id="main-navbar">
+            <div class="navbar-logo">
+                <div>
+                </div>
+            </div>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="app.html">The App</a>
+                </li>
+                <li>
+                    <a href="code.html" class="active-page">The Code</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <main class="main-code-content">
+        <div class="container">
+            <div class="code">
+                <pre class="line-numbers">
+<code class="language-javascript">//Comment
+function helloWorld(){
+    alert("hello world");
+}
+</code>
+                </pre>
+            </div>
+            <div class="explanation">
+                <h2>Explanation example</h2>
+                <p>this is my code</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam laudantium dolor possimus ipsum
+                    non aspernatur doloribus nemo eum deserunt, quas nisi a enim quasi sapiente ducimus culpa. Labore,
+                    et temporibus.</p>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Main site footer -->
+    <footer id="main-footer">
+        <div class="footer-logo">
+            <div class="navbar-logo">
+                <div>
+                </div>
+            </div>
+        </div>
+        <div class="title">
+            &copy; A Coding Project by Daniel Montoya
+        </div>
+        <div class="social-media">
+            <a href="https://github.com/dnewbie25" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/daniel-steven-montoya-rojas-74007a184/" target="_blank"><i
+                    class="fab fa-linkedin fa-2x"></i></a>
+
+        </div>
+    </footer>
+
+    <!-- Main js -->
+    <script src="js/main-site.js"></script>
+    <script src="js/prism.js"></script>
+    <script>
+        Prism.plugins.NormalizeWhitespace.setDefaults({
+            'remove-trailing': true,
+            'remove-indent': true,
+            'left-trim': true,
+            'right-trim': true
+        })
+    </script>
+</body>
+
+</html>

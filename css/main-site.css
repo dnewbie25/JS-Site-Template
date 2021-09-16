@@ -1,0 +1,231 @@
+:root {
+    --primary-color: #1d5888;
+    --secondary-color: #ff993b;
+    --white-color: #dff3e4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.bold-text {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* general styles */
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.active-page {
+    color: var(--secondary-color);
+}
+
+/* Navbar style */
+
+header {
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    padding: 1rem;
+}
+
+.navbar-logo {
+    background-color: white;
+    flex-basis: 5rem;
+    min-width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+.navbar-logo>div {
+    background-image: url("../img/nobackground.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+header nav .title {
+    flex-grow: max-content;
+    text-align: left;
+}
+
+ul {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.5rem;
+    padding: 0;
+}
+
+ul li {
+    margin-right: 2rem;
+}
+
+ul li a {
+    color: white;
+}
+
+/* Main footer */
+
+footer {
+    padding: 1rem;
+    height: auto;
+    background-color: black;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+}
+
+footer .social-media i {
+    margin-left: 2rem;
+}
+
+
+/* content */
+
+.main-content {
+    flex-grow: 1;
+    margin: 2rem;
+    align-self: center;
+    /* justify-self: center;
+    align-self: center; */
+    color: var(--primary-color);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, max-content));
+    grid-template-rows: repeat(auto, max-content);
+    gap: 16px;
+}
+
+.main-content h1 {
+    grid-column: 1/-1;
+    grid-row: 1;
+}
+
+.main-content .ul ul {
+    display: block;
+    font-size: 1rem;
+}
+
+.main-content .ul ul li {
+    margin: 10px 0;
+}
+
+.main-content .ul ul i {
+    margin-right: 0.5rem;
+    color: var(--secondary-color);
+}
+
+.main-content .btn {
+    background-color: #c4c4c4;
+    color: black;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+    animation: ease-out;
+}
+
+.main-content .btn:hover {
+    transition: all 300ms;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.hundo img {
+    width: 100%;
+    height: auto;
+}
+
+.main-content .footer {
+    grid-column: 1/-1;
+}
+
+.main-content .footer h3 {
+    margin-bottom: 10px;
+}
+
+.main-content .footer ul .language-logo1 {
+    width: 70px;
+    height: 70px;
+    background-image: url("../img/js\ logo.PNG");
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.main-content .footer ul .language-logo2 {
+    width: 70px;
+    height: 70px;
+    background-image: url("../img/html\ logo.PNG");
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.main-content .footer ul .language-logo3 {
+    width: 70px;
+    height: 70px;
+    background-image: url("../img/css\ logo.PNG");
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+/* media queries */
+
+@media (max-width:634px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, max-content);
+        gap: 16px;
+    }
+}
+
+/* prism js */
+
+code[class*="language-"],
+pre[class*="language-"] {
+    white-space: pre-wrap;
+    word-break: break-all;
+    word-wrap: break-word;
+}

@@ -1,0 +1,13 @@
+.main-code-content{
+    flex-grow: 1;
+    margin: 2rem;
+    align-self: center;
+}
+
+.main-code-content .container .code{
+    text-align: left;
+}
+
+.container{
+    padding-top: 0;
+}
