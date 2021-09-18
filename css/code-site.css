@@ -4,6 +4,12 @@
     align-self: center;
 }
 
+.main-code-content h1,
+.main-code-content hr{
+    margin-bottom: 1rem;
+}
+
+
 .main-code-content .container .code{
     text-align: left;
 }
