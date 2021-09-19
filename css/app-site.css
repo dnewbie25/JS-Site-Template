@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+hr {
+    margin: 1rem 0;
+}
+
+h1,
+h3,
+p {
+    margin-bottom: 1rem;
+}
+
+
+#main-app {
+    margin: 0 auto;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.app-info,
+.app-content {
+    flex-basis: calc(50% - 1rem);
+    flex-grow: 1;
+}
+
+#values {
+    display: flex;
+    gap: 5px;
+}
+
+#values input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    flex-grow: 1;
+}
+
+#values~h3 {
+    margin: 1rem 0;
+}
+
+.result-btn{
+    margin-top: 1rem;
+    background-color: #c4c4c4;
+    color: black;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+    animation: ease-out;
+}
+
+.result-btn:hover {
+    transition: all 300ms;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
